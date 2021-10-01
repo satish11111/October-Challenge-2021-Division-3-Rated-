@@ -1,0 +1,62 @@
+Chef has A units of solid and B
+
+
+ units of liquid. He combines them to create a mixture. What kind of 
+mixture does Chef produce: a solution, a solid, or a liquid? 
+
+
+A mixture is called a:
+
+
+1) A solution if A>0
+
+ and B>0,
+
+
+2) A solid if B=0
+
+, or
+
+
+3) A liquid if A=0
+
+. 
+
+
+
+java code
+
+
+
+import java.util.Scanner;
+
+class Codechef {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int testcase=sc.nextInt();
+		for(int i=1;i<=testcase;i++) {
+			int a=sc.nextInt();
+			int b=sc.nextInt();
+			if(a>0 && b>0 ) {
+				System.out.println("Solution");
+			}else if(b==0) {
+				System.out.println("Solid");
+			}else if(a==0) {
+				System.out.println("Liquid");
+			}
+			
+		}
+	}
+
+	
+	
+}
+
+
+
+
+
+
+
+
